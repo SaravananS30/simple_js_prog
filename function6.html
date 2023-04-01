@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings!</title>
+</head>
+<body>
+    <h2>
+        Functions using JavaScript
+    </h2>
+<h3> Step 6 </h3>
+    <script>
+         function hello(){
+            var name = prompt("Enter Your Name: ")
+            return name;
+        }
+        var foods = ["Biriyani","Parotta","Dosa","Chicken chukka","Thayiru Soru"]
+        
+
+        function hospitality(name,foods){
+            for ( let i = 0; i < foods.length; i++){
+                console.log("Hello " + name + "! Your gift is " + foods[i] + ".");
+            }}
+        hospitality(hello(),foods)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Processing</title>
+</head>
+<body>
+    <h2> String Processing and Array Functionalities</h2>
+
+    <script>   
+        var employee = new Array()
+        name1 = prompt("Enter name1: ")
+        name2 = prompt("Enter name2: ")
+        name3 = prompt("Enter name3: ")
+        name4 = prompt("Enter name4: ")
+        name5 = prompt("Enter name5: ")
+        employee.push(name1,name2,name3,name4,name5)
+       
+        
+        for (i=0 ; i < employee.length ; i++) {
+            console.log("The Name of Employee: "+employee[i])
+        }
+
+        function func(name) {
+                 return name;
+        }
+        console.log("The Names are Inserted!")
+        console.log("")
+
+        //find()
+        console.log("The value of the First Element: "+employee.find(func))
+        console.log("")
+
+        //findIndex()
+        console.log("The Index value of the First Element: "+employee.findIndex(func))
+        console.log("") 
+
+        //indexOf()
+        console.log("The First Index of the Name: "+ employee.indexOf('saravanan'))
+        console.log("")
+
+        //lastIndexOf    
+        console.log("The Index of the Name with last match: "+employee.lastIndexOf('saravanan'))
+        console.log("")
+
+        //pop()
+        console.log("Removing the Last element: "+employee.pop())
+        console.log("")
+
+        //push()
+        console.log("Adding the Elements: "+employee.push("Arun","Nambi","Sujith"))
+        console.log("")
+
+        //reverse()
+        console.log("Reversing the Elements: "+employee.reverse())
+        console.log("")
+
+        //shift()
+        console.log("Removing and Returning the first element of array: "+employee.shift())
+        console.log("")
+
+
+        //sort()
+        console.log("Returning the element of the array in sorted order: "+employee.sort())
+        console.log("")
+
+        
+    </script>
+</body>
+</html>

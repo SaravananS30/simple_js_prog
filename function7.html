@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings!</title>
+</head>
+<body>
+    <h2>
+        Functions using JavaScript
+    </h2>
+<h3> Step 7 </h3>
+    <script>
+         function hello(){
+            var greeting = "Hello " + name + '!';
+            return greeting;
+        }
+
+        var name = prompt("Enter Your Name: ")
+        var foods = ["Biriyani","Parotta","Dosa","Chicken chukka"," Thayiru Soru"]
+        
+
+        function hospitality(name,foods){
+            console.log(hello(name));
+            var randomIndex = Math.floor(Math.random() * foods.length);
+                console.log("I offer you a " + foods[randomIndex] + "!");
+            }
+        hospitality(name,foods)
+    </script>
+    
+</body>
+</html>

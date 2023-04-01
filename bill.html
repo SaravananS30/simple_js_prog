@@ -1,0 +1,59 @@
+<html>
+    <title>
+        Discount bill creation
+    </title>
+    <body>
+        <h2>
+            Discount bill creation
+        </h2>
+        <script>
+        var name = prompt("Enter Your Name: ")
+        var mob_num=prompt("Enter Your Mobile Number: ")
+        
+        console.log("Name: "+name);
+        console.log("Phone Number: "+mob_num);
+        
+        var prod1_name=prompt("Enter Name of Product1: ")
+        console.log("Product1 Name: "+prod1_name)
+        var prod1_amt=parseInt(prompt("Enter Amount of Product1: "))
+        console.log("Product1 Amount: "+prod1_amt)
+        var prod2_name=prompt("Enter Name of Product2: ")
+        console.log("Product2 Name: "+prod2_name)
+        var prod2_amt=parseInt(prompt("Enter Amount of Product2: "))
+        console.log("Product2 Amount: "+prod2_amt)
+        var prod3_name=prompt("Enter Name of Product3: ")
+        console.log("Product3 Name: "+prod3_name)
+        var prod3_amt=parseInt(prompt("Enter Amount of Product3: "))
+        console.log("Product3 Amount: "+prod3_amt)
+        var prod4_name=prompt("Enter Name of Product4: ")
+        console.log("Product4 Name: "+prod4_name)
+        var prod4_amt=parseInt(prompt("Enter Amount of Product4: "))
+        console.log("Product4 Amount: "+prod4_amt)
+        var prod5_name=prompt("Enter Name of Product5: ")
+        console.log("Product5 Name: "+prod5_name)
+        var prod5_amt=parseInt(prompt("Enter Amount of Product5: "))
+        console.log("Product5 Amount: "+prod5_amt)
+
+        var total_amt = (prod1_amt+prod2_amt+prod3_amt+prod4_amt+prod5_amt)
+        console.log("Total Amount: "+total_amt)
+       
+
+        if(total_amt<500) {
+            discount = (total_amt*0)/100
+            price = total_amt-discount
+            console.log("You have 0% Discount")
+            console.log("Final Amount is: "+price)
+        } else if (total_amt >500 & total_amt <1500 ){
+            discount = (total_amt*10)/100
+            price = total_amt-discount
+            console.log("You have 10% Discount")
+            console.log("Final Amount is: "+price)
+        } else if (total_amt > 1500){
+            discount = (total_amt*50)/100
+            price = total_amt-discount
+            console.log("You have 50% Discount")
+            console.log("Final Amount is: "+price)
+          }
+        </script>
+    </body>
+</html>

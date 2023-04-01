@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function hello(name) {
+  var greeting = 'Hello, ' + name + '!';
+  return greeting;
+}
+
+var visitorName = prompt('What is your name?');
+
+if (visitorName === null || visitorName === '') {
+  console.log('You didn\'t give me your name.');
+} else {
+  console.log(hello(visitorName));
+}
+
+var foods = ["pizza", "pasta", "burger", "salad", "sandwich"];
+
+function hospitality(name, gift) {
+  console.log(hello(name));
+
+  var randomIndex = Math.floor(Math.random() * gift.length);
+  console.log('I offer you a ' + gift[randomIndex] + ', ' + name + '!');
+}
+
+hospitality(visitorName, foods);
+
+</script>
+    
+</body>
+</html>
